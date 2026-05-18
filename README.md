@@ -1,23 +1,40 @@
-This project focuses on detecting COVID-19 infection from chest X-ray images using machine learning and deep learning techniques. The system classifies lung X-ray images into three categories:
+#  COVID-19 Detection Using Lung X-Ray Images
 
-COVID-19 Positive
-Normal
-Pneumonia
+##  Project Overview
+
+This project focuses on detecting **COVID-19 infection from chest X-ray images** using machine learning and deep learning techniques.
+
+The system classifies lung X-ray images into three categories:
+
+- COVID-19 Positive  
+- Normal  
+- Pneumonia  
 
 The objective is to assist in early and automated diagnosis using a fast, non-invasive, and AI-driven approach.
+
+---
+
+## 📊 Dataset Information
+
 The dataset is provided in a ZIP format and must be downloaded and extracted before running the project.
 
-Dataset Setup Steps
-Download the dataset ZIP file
-Extract the ZIP file
-Place the extracted folder inside the project root directory
+### Dataset Setup Steps
 
+- Download the dataset ZIP file  
+- Extract the ZIP file  
+- Place the extracted folder inside the project root directory  
+
+---
+
+###  Example Folder Structure
+
+```text
 project-root/
 │
 ├── data/
-│ ├── covid/
-│ ├── normal/
-│ ├── pneumonia/
+│   ├── covid/
+│   ├── normal/
+│   ├── pneumonia/
 │
 ├── src/
 ├── main.py
@@ -34,8 +51,8 @@ Scikit-learn
 
 Methodology
 
-
 The project follows a deep learning pipeline:
+
 Data loading and preprocessing
 Image resizing and normalization
 Data augmentation to improve generalization
