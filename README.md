@@ -15,14 +15,14 @@ Place the extracted folder inside the project root directory
 project-root/
 │
 ├── data/
-│   ├── covid/
-│   ├── normal/
-│   ├── pneumonia/
+│ ├── covid/
+│ ├── normal/
+│ ├── pneumonia/
 │
 ├── src/
 ├── main.py
 ├── requirements.txt
-└── README.md]
+└── README.md
 
 Technologies Used
 Python
