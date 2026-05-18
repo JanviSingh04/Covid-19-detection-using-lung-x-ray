@@ -1,78 +1,45 @@
-COVID 19 Detection Using Lung X Ray Images
-Project Overview
+This project focuses on detecting COVID-19 infection from chest X-ray images using machine learning and deep learning techniques. The system classifies lung X-ray images into three categories:
 
-This research project focuses on detecting COVID 19 using chest X ray images with the help of machine learning and deep learning techniques. The system analyzes lung X ray images to classify them as COVID 19 positive normal or pneumonia. The goal is to support early diagnosis using an automated and non invasive approach.
+COVID-19 Positive
+Normal
+Pneumonia
 
-Dataset Information
+The objective is to assist in early and automated diagnosis using a fast, non-invasive, and AI-driven approach.
+The dataset is provided in a ZIP format and must be downloaded and extracted before running the project.
 
-The dataset is provided in a ZIP file format. The ZIP file must be downloaded and extracted before running the project code.
+Dataset Setup Steps
+Download the dataset ZIP file
+Extract the ZIP file
+Place the extracted folder inside the project root directory
 
-Steps to prepare the dataset
-1 Download the dataset ZIP file
-2 Extract the ZIP file
-3 Place the extracted folder inside the project directory
-
-Example folder structure
-
-project-root
-data
-covid
-normal
-pneumonia
-src
-README.md
+project-root/
+│
+├── data/
+│   ├── covid/
+│   ├── normal/
+│   ├── pneumonia/
+│
+├── src/
+├── main.py
+├── requirements.txt
+└── README.md]
 
 Technologies Used
-
 Python
-TensorFlow or Keras
+TensorFlow / Keras
 NumPy
 OpenCV
 Matplotlib
+Scikit-learn
 
 Methodology
 
-Loading and preprocessing the dataset
+
+The project follows a deep learning pipeline:
+Data loading and preprocessing
 Image resizing and normalization
-Data augmentation
-Training a CNN based model
-Evaluating model performance
+Data augmentation to improve generalization
+CNN-based model training
+Model evaluation and performance analysis
 
-How to Run the Project
-
-1 Clone the repository
-
-git clone https://github.com/your-username/your-repository-name.git
-
-
-2 Move into the project folder
-
-cd your-repository-name
-
-
-3 Install required libraries
-
-pip install -r requirements.txt
-
-
-4 Make sure the dataset ZIP file is extracted correctly
-5 Run the main program
-
-python main.py
-
-Evaluation Metrics
-
-Accuracy
-Precision
-Recall
-F1 score
-
-Applications
-
-Medical image analysis
-AI assisted healthcare systems
-Academic and research purposes
-
-Note
-
-This project is intended only for educational and research purposes. It should not be used for real medical diagnosis.
+The model is built using a Convolutional Neural Network (CNN) that automatically extracts features from X-ray images to classify lung conditions.
